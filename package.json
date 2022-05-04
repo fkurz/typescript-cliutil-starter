@@ -8,7 +8,8 @@
     "lint": "eslint src --ext .ts --fix",
     "build": "tsc --build",
     "test": "jest",
-    "package": "pkg dist/main.js --no-bytecode --public-packages '*' --public --target host --output bin/main"
+    "package": "pkg dist/main.js --no-bytecode --public-packages '*' --public --target host --output bin/main",
+    "postpackage": "chmod +x bin/main"
   },
   "bin": {
     "typescript-cliutil-starter": "bin/main"
