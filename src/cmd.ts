@@ -13,7 +13,7 @@ export default (): Command => {
   command.action((options) => {
     if (options.greet) {
       console.log(HELLO);
-      return
+      return;
     }
 
     command.help();

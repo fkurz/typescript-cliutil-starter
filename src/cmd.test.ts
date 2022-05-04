@@ -43,7 +43,6 @@ describe("Base command", () => {
     );
   });
 
-
   it("Should print help when passed '--help'", () => {
     const cmd = buildCmd();
     const args = buildArgs("--help");
